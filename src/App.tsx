@@ -9,7 +9,6 @@ function App() {
         <Header />
           <Home />
       </div>
-
       <Footer />
     </div>
   );
