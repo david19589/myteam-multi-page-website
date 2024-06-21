@@ -1,8 +1,9 @@
 import Logo from "/src/assets/logo.svg";
 import Hamburger from "/src/assets/icon-hamburger.svg";
+
 function Header() {
   return (
-    <div className="md:px-[2.5rem] flex justify-between items-center pt-[3rem] px-[1.5rem] mb-[5rem]">
+    <div className="lg:px-[10.31rem] md:px-[2.5rem] flex justify-between items-center pt-[3rem] px-[1.5rem] mb-[5rem]">
       <div className="md:flex md:flex-row md:items-center md:gap-[3rem]">
         <img className="w-max max-w-[8rem] h-max" src={Logo} alt="Logo" />
         <div className="md:flex md:mb-0 hidden gap-[1.5rem] mb-[1.5rem]">

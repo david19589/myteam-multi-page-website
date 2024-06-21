@@ -2,14 +2,14 @@ import Logo from "/src/assets/logo.svg";
 
 function Footer() {
   return (
-    <div className="md:relative md:flex-row md:justify-between md:px-[2.5rem] flex flex-col items-center py-[4rem] px-[1.5rem] bg-[#002529]">
+    <div className="lg:px-[7rem] md:relative md:flex-row md:justify-between md:px-[2.5rem] flex flex-col items-center py-[4rem] px-[1.5rem] bg-[#002529]">
       <div className="flex flex-col items-center">
         <img
-          className="md:mb-[3rem] md:w-[7rem] mb-[1.5rem]"
+          className="lg:mb-[1.6rem] md:mb-[3rem] md:w-[7rem] mb-[1.5rem]"
           src={Logo}
           alt="Logo"
         />
-        <div className="flex gap-[1.5rem] mb-[1.5rem]">
+        <div className="lg:mb-0 flex gap-[1.5rem] mb-[1.5rem]">
           <h2 className="text-[1rem] leading-[1.5rem] font-[600] text-[#FFF] cursor-pointer hover:text-[#F67E7E]">
             home
           </h2>
@@ -18,11 +18,11 @@ function Footer() {
           </h2>
         </div>
       </div>
-      <h2 className="md:text-end md:absolute md:right-[2.5rem] md:mb-0 text-[1rem] leading-[1.5rem] font-[600] mb-[2.5rem] text-[#FFF] text-center max-w-[9rem] opacity-[60%]">
+      <h2 className="lg:left-[20rem] lg:top-[4.25rem] lg:text-start lg:max-w-[12rem] md:text-end md:absolute md:right-[2.5rem] md:mb-0 text-[1rem] leading-[1.5rem] font-[600] mb-[2.5rem] text-[#FFF] text-center max-w-[9rem] opacity-[60%]">
         987 Hillcrest Lane Irvine, CA California 92714 Call Us : 949-833-7432
       </h2>
       <div className="flex flex-col items-center gap-[1rem]">
-        <div className="md:absolute md:left-[2.5rem] md:bottom-[2rem] flex gap-[1rem]">
+        <div className="lg:right-[7rem] lg:left-[unset] lg:bottom-[7rem] md:absolute md:left-[2.5rem] md:bottom-[2rem] flex gap-[1rem]">
           <svg
             className="cursor-pointer group"
             xmlns="http://www.w3.org/2000/svg"
@@ -60,7 +60,7 @@ function Footer() {
             />
           </svg>
         </div>
-        <h2 className="md:absolute md:right-[2.5rem] md:bottom-[2rem] text-[1rem] leading-[1.5rem] font-[600] text-[#FFF] opacity-[60%]">
+        <h2 className="lg:right-[7rem] lg:bottom-[4rem] md:absolute md:right-[2.5rem] md:bottom-[2rem] text-[1rem] leading-[1.5rem] font-[600] text-[#FFF] opacity-[60%]">
           Copyright 2020. All Rights Reserved
         </h2>
       </div>

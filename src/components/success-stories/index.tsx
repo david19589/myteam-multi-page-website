@@ -8,14 +8,14 @@ interface Story {
 
 function SuccessStories(props: { storiesData: Story[] }) {
   return (
-    <div className="mb-[10.25rem] px-[1.5rem]">
+    <div className="lg:flex lg:flex-row lg:justify-center mb-[10.25rem] px-[1.5rem]">
       {props.storiesData.map((item, index) => (
         <div
           key={index}
-          className="flex flex-col items-center mb-[3rem] bg-[url('/src/assets/icon-quotes.svg')] bg-no-repeat bg-top"
+          className="lg:mr-[2rem] flex flex-col items-center mb-[3rem] bg-[url('/src/assets/icon-quotes.svg')] bg-no-repeat bg-top"
         >
           <div className="flex items-end h-[9rem]">
-            <p className="md:max-w-[35rem] text-[0.94rem] leading-[1.56rem] font-[600] text-[#FFF] max-w-[21rem] text-center mb-[1rem]">
+            <p className="lg:max-w-[22rem] md:max-w-[35rem] text-[0.94rem] leading-[1.56rem] font-[600] text-[#FFF] max-w-[21rem] text-center mb-[1rem]">
               {item.paragraph}
             </p>
           </div>
