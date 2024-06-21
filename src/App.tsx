@@ -1,16 +1,19 @@
+import { BrowserRouter } from "react-router-dom";
 import Footer from "./components/footer";
 import Header from "./components/header";
-import Home from "./components/home";
+import PageRoutes from "./components/page-routes";
 
 function App() {
   return (
-    <div>
-      <div className="bg-[#014E56]">
-        <Header />
-          <Home />
+    <BrowserRouter>
+      <div>
+        <div className="bg-[#014E56]">
+          <Header />
+          <PageRoutes />
+        </div>
+        <Footer />
       </div>
-      <Footer />
-    </div>
+    </BrowserRouter>
   );
 }
 

@@ -5,6 +5,7 @@ import AvatarKady from "/src/assets/avatar-kady.jpg";
 import AvatarAiysha from "/src/assets/avatar-aiysha.jpg";
 import AvatarArthur from "/src/assets/avatar-arthur.jpg";
 import SuccessStories from "../success-stories";
+import { Link } from "react-router-dom";
 
 const infoData = [
   {
@@ -69,8 +70,8 @@ function Home() {
             <span className="hidden lg:flex h-[0.25rem] w-[3.13rem] bg-[#79C8C7] mb-[2rem]"></span>
             <p className="lg:text-start lg:max-w-[24rem] md:max-w-[31rem] text-[1rem] leading-[1.8rem] font-[600] max-w-[22rem] text-center text-[#FFF]">
               Finding the right people and building high performing teams can be
-              hard. Most companies aren’t tapping into the abundance of global
-              talent. We’re about to change that.
+              hard. Most companies aren`t tapping into the abundance of global
+              talent. We`re about to change that.
             </p>
           </div>
         </div>
@@ -118,9 +119,11 @@ function Home() {
         <h1 className="lg:text-[3rem] lg:leading-[3rem] lg:mr-[10rem] md:mb-0 text-[2rem] leading-[2rem] font-[700] text-[#012F34] text-center mb-[1.5rem]">
           Ready to get started?
         </h1>
-        <button className="text-[1.13rem] leading-[1.75rem] font-[600] rounded-3xl border-[0.13rem] border-[#012F34] text-[#012F34] px-[1.5rem] py-[0.5rem] hover:text-[#FFF] transition-all duration-200 hover:bg-[#012F34]">
-          contact us
-        </button>
+        <Link to="/contact-us">
+          <button className="text-[1.13rem] leading-[1.75rem] font-[600] rounded-3xl border-[0.13rem] border-[#012F34] text-[#012F34] px-[1.5rem] py-[0.5rem] hover:text-[#FFF] transition-all duration-200 hover:bg-[#012F34]">
+            contact us
+          </button>
+        </Link>
       </div>
     </div>
   );

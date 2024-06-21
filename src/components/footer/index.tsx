@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Logo from "/src/assets/logo.svg";
 
 function Footer() {
@@ -10,12 +11,16 @@ function Footer() {
           alt="Logo"
         />
         <div className="lg:mb-0 flex gap-[1.5rem] mb-[1.5rem]">
-          <h2 className="text-[1rem] leading-[1.5rem] font-[600] text-[#FFF] cursor-pointer hover:text-[#F67E7E]">
-            home
-          </h2>
-          <h2 className="text-[1rem] leading-[1.5rem] font-[600] text-[#FFF] cursor-pointer hover:text-[#F67E7E]">
-            about
-          </h2>
+          <Link to="/">
+            <h2 className="text-[1rem] leading-[1.5rem] font-[600] text-[#FFF] cursor-pointer hover:text-[#F67E7E]">
+              home
+            </h2>
+          </Link>
+          <Link to="/about">
+            <h2 className="text-[1rem] leading-[1.5rem] font-[600] text-[#FFF] cursor-pointer hover:text-[#F67E7E]">
+              about
+            </h2>
+          </Link>
         </div>
       </div>
       <h2 className="lg:left-[20rem] lg:top-[4.25rem] lg:text-start lg:max-w-[12rem] md:text-end md:absolute md:right-[2.5rem] md:mb-0 text-[1rem] leading-[1.5rem] font-[600] mb-[2.5rem] text-[#FFF] text-center max-w-[9rem] opacity-[60%]">
@@ -60,7 +65,7 @@ function Footer() {
             />
           </svg>
         </div>
-        <h2 className="lg:right-[7rem] lg:bottom-[4rem] md:absolute md:right-[2.5rem] md:bottom-[2rem] text-[1rem] leading-[1.5rem] font-[600] text-[#FFF] opacity-[60%]">
+        <h2 className="lg:right-[7rem] lg:bottom-[4rem] md:absolute md:right-[2.5rem] md:bottom-[2rem] text-[1rem] leading-[1.5rem] font-[600] text-[#FFF] text-center opacity-[60%]">
           Copyright 2020. All Rights Reserved
         </h2>
       </div>
