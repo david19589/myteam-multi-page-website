@@ -1,26 +1,47 @@
 import Logo from "/src/assets/logo.svg";
 import Hamburger from "/src/assets/icon-hamburger.svg";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Menu from "../menu";
 import clsx from "clsx";
 import { Link } from "react-router-dom";
 
 function Header() {
   const [openMenu, setOpenMenu] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  const handleScroll = () => {
+    if (window.scrollY > 0) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
-    <>
-      <div className="lg:px-[10.31rem] md:px-[2.5rem] flex justify-between items-center pt-[3rem] px-[1.5rem] mb-[5rem]">
+    <div
+      className={clsx(
+        scrolled && "top-[-1rem] shadow-xl",
+        "fixed top-0 left-0 right-0 z-20 bg-[#014e56] transition-all duration-500"
+      )}
+    >
+      <div className="lg:px-[10.31rem] md:px-[2.5rem] flex justify-between items-center pt-[3rem] px-[1.5rem] mb-[1rem]">
         <div className="md:flex md:flex-row md:items-center md:gap-[3rem]">
           <img className="w-max max-w-[8rem] h-max" src={Logo} alt="Logo" />
           <div className="md:flex md:mb-0 hidden gap-[1.5rem] mb-[1.5rem]">
             <Link to="/">
-              <h2 className="text-[1rem] leading-[1.5rem] font-[600] text-[#FFF] cursor-pointer hover:text-[#F67E7E]">
+              <h2 className="text-[1rem] leading-[1.5rem] font-[600] text-[#FFF] cursor-pointer hover:text-[#F67E7E] transition-all duration-200">
                 home
               </h2>
             </Link>
             <Link to="/about">
-              <h2 className="text-[1rem] leading-[1.5rem] font-[600] text-[#FFF] cursor-pointer hover:text-[#F67E7E]">
+              <h2 className="text-[1rem] leading-[1.5rem] font-[600] text-[#FFF] cursor-pointer hover:text-[#F67E7E] transition-all duration-200">
                 about
               </h2>
             </Link>
@@ -48,7 +69,7 @@ function Header() {
       >
         <Menu openMenu={openMenu} setOpenMenu={setOpenMenu} />
       </div>
-    </>
+    </div>
   );
 }
 

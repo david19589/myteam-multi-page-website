@@ -60,7 +60,7 @@ const storiesData = [
 
 function Home() {
   return (
-    <div className="flex flex-col justify-center">
+    <div className="flex flex-col justify-center pt-[10rem]">
       <div className="lg:px-[10.5rem] lg:bg-[url('/src/assets/bg-pattern-home-1.svg')] bg-no-repeat bg-left">
         <div className="lg:flex-row lg:justify-center lg:bg-[bottom_right] lg:pb-[10rem] flex flex-col items-center h-[25.44rem] px-[1.5rem] bg-[url('/src/assets/bg-pattern-home-2.svg')] bg-no-repeat bg-bottom">
           <h1 className="lg:text-start lg:text-[6.3rem] lg:leading-[6.3rem] lg:max-w-[39rem] lg:mr-[2rem] lg:mb-0 md:text-[4rem] md:leading-[3.5rem] md:max-w-[21rem] text-[2.5rem] leading-[2.5rem] font-[700] max-w-[15rem] text-center text-[#FFF] mb-[1.2rem]">

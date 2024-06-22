@@ -13,7 +13,7 @@ function Menu(props: {
         "md:hidden flex justify-end fixed z-10 top-0 bottom-0 left-0 right-0 transition-all duration-150"
       )}
     >
-      <div className="bg-[#2C6269] w-[70%] px-[3rem] py-[3.5rem] bg-[url('/src/assets/bg-pattern-about-1-mobile-nav-1.svg')] bg-no-repeat bg-[right_bottom]">
+      <div className="bg-[#2C6269] px-[3rem] py-[3.5rem] bg-[url('/src/assets/bg-pattern-about-1-mobile-nav-1.svg')] bg-no-repeat bg-[right_bottom]">
         <div className="flex justify-end">
           <img
             onClick={() => {

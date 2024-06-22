@@ -3,31 +3,38 @@ import Logo from "/src/assets/logo.svg";
 
 function Footer() {
   return (
-    <div className="lg:px-[7rem] md:relative md:flex-row md:justify-between md:px-[2.5rem] flex flex-col items-center py-[4rem] px-[1.5rem] bg-[#002529]">
-      <div className="flex flex-col items-center">
-        <img
-          className="lg:mb-[1.6rem] md:mb-[3rem] md:w-[7rem] mb-[1.5rem]"
-          src={Logo}
-          alt="Logo"
-        />
-        <div className="lg:mb-0 flex gap-[1.5rem] mb-[1.5rem]">
-          <Link to="/">
-            <h2 className="text-[1rem] leading-[1.5rem] font-[600] text-[#FFF] cursor-pointer hover:text-[#F67E7E]">
-              home
-            </h2>
-          </Link>
-          <Link to="/about">
-            <h2 className="text-[1rem] leading-[1.5rem] font-[600] text-[#FFF] cursor-pointer hover:text-[#F67E7E]">
-              about
-            </h2>
-          </Link>
+    <div className="lg:flex-row lg:justify-between lg:px-[7rem] md:flex-col md:items-stretch md:px-[2.5rem] flex flex-col items-center py-[4rem] px-[1.5rem] bg-[#002529]">
+      <div className="lg:gap-[10rem] lg:items-center lg:mb-0 md:flex-row md:justify-between md:mb-[0.5rem] flex flex-col mb-[2.5rem]">
+        <div className="flex flex-col items-center">
+          <img
+            className="lg:mb-[1.6rem] md:mb-[3rem] md:w-[7rem] mb-[1.5rem]"
+            src={Logo}
+            alt="Logo"
+          />
+          <div className="lg:mb-0 flex gap-[1.5rem] mb-[1.5rem]">
+            <Link to="/">
+              <h2 className="text-[1rem] leading-[1.5rem] font-[600] text-[#FFF] cursor-pointer hover:text-[#F67E7E]">
+                home
+              </h2>
+            </Link>
+            <Link to="/about">
+              <h2 className="text-[1rem] leading-[1.5rem] font-[600] text-[#FFF] cursor-pointer hover:text-[#F67E7E]">
+                about
+              </h2>
+            </Link>
+          </div>
+        </div>
+        <div className="lg:items-start md:items-end flex flex-col items-center">
+          <h2 className="lg:text-start md:text-end text-[1rem] leading-[1.5rem] font-[600] text-[#FFF] text-center max-w-[9rem] opacity-[60%]">
+            987 Hillcrest Lane Irvine, CA California 92714
+          </h2>
+          <h2 className="lg:text-start md:text-end text-[1rem] leading-[1.5rem] font-[600] text-[#FFF] text-center opacity-[60%]">
+            Call Us : 949-833-7432
+          </h2>
         </div>
       </div>
-      <h2 className="lg:left-[20rem] lg:top-[4.25rem] lg:text-start lg:max-w-[12rem] md:text-end md:absolute md:right-[2.5rem] md:mb-0 text-[1rem] leading-[1.5rem] font-[600] mb-[2.5rem] text-[#FFF] text-center max-w-[9rem] opacity-[60%]">
-        987 Hillcrest Lane Irvine, CA California 92714 Call Us : 949-833-7432
-      </h2>
-      <div className="flex flex-col items-center gap-[1rem]">
-        <div className="lg:right-[7rem] lg:left-[unset] lg:bottom-[7rem] md:absolute md:left-[2.5rem] md:bottom-[2rem] flex gap-[1rem]">
+      <div className="lg:flex-col lg:items-end md:flex-row md:justify-between flex flex-col items-center gap-[1rem]">
+        <div className="flex gap-[1rem]">
           <svg
             className="cursor-pointer group"
             xmlns="http://www.w3.org/2000/svg"
@@ -65,7 +72,7 @@ function Footer() {
             />
           </svg>
         </div>
-        <h2 className="lg:right-[7rem] lg:bottom-[4rem] md:absolute md:right-[2.5rem] md:bottom-[2rem] text-[1rem] leading-[1.5rem] font-[600] text-[#FFF] text-center opacity-[60%]">
+        <h2 className="text-[1rem] leading-[1.5rem] font-[600] text-[#FFF] text-center opacity-[60%]">
           Copyright 2020. All Rights Reserved
         </h2>
       </div>
