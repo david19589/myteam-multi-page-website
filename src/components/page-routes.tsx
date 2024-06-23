@@ -2,6 +2,7 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import Home from "./home";
 import About from "./about";
 import { useEffect } from "react";
+import ContactUs from "./contact-us";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -19,6 +20,7 @@ function PageRoutes() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
+        <Route path="contact-us" element={<ContactUs />} />
       </Routes>
     </>
   );

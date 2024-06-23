@@ -13,12 +13,12 @@ function Footer() {
           />
           <div className="lg:mb-0 flex gap-[1.5rem] mb-[1.5rem]">
             <Link to="/">
-              <h2 className="text-[1rem] leading-[1.5rem] font-[600] text-[#FFF] cursor-pointer hover:text-[#F67E7E]">
+              <h2 className="text-[1rem] leading-[1.5rem] font-[600] text-[#FFF] cursor-pointer hover:text-[#F67E7E] transition-all duration-200">
                 home
               </h2>
             </Link>
             <Link to="/about">
-              <h2 className="text-[1rem] leading-[1.5rem] font-[600] text-[#FFF] cursor-pointer hover:text-[#F67E7E]">
+              <h2 className="text-[1rem] leading-[1.5rem] font-[600] text-[#FFF] cursor-pointer hover:text-[#F67E7E] transition-all duration-200">
                 about
               </h2>
             </Link>
